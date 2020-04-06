@@ -1,0 +1,23 @@
+div.style {
+    width: 100%;
+    border: 1px solid gray;
+}
+header,footer {
+    padding: 1em;
+    color: black;
+    background-color: #00bfbf;
+    text-align: center;
+}
+nav{
+    color: #00bf00;
+    padding: 1em;
+    float: left;
+    max-width: 160px;
+    margin: 0;
+}
+article{
+    margin-left: 170px;
+    border-left: 1px solid #1d4b8f;
+    padding: 1em;
+    overflow: hidden;
+}
