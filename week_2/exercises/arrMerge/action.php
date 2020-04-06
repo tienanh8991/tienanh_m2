@@ -9,7 +9,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $yArray = $_REQUEST["yArray"];
 
     $zArray = array_merge($xArray, $yArray);
-    var_dump($zArray);
+
+    foreach ($zArray as $value){
+        echo $value . " " ;
+    }
 }
 ?>
 <!doctype html>
@@ -35,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php endfor; ?>
         </tr>
     </table>
-    <button type="submit">M</button>
+    <button type="submit">Merge</button>
 </form>
 </body>
 </html>

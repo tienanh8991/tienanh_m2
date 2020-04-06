@@ -9,7 +9,7 @@
 <form action="action.php" method="get">
     <input type="text" name="array1">
     <input type="text" name="array2">
-    <button type="submit">Merge</button>
+    <button type="submit">Submit</button>
 </form>
 
 </body>
