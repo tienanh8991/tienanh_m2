@@ -6,19 +6,21 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     for ($i = 0; $i < 100; $i++) {
         array_push($arr, floor(rand(10, 100)));
     }
-    var_dump($arr);
-    try {
+    if ($number > 100 || $number <0){
+        throw new Exception(' số nhập vào vượt quá giới hạn !');
+    }else{
         foreach ($arr as $key => $value) {
-            if ($key == $number) {
-                echo "phần tử tại vị trí " . $key . " có giá trụ bằng " . $value;
-                break;
-//            }else{
-//            throw new Exception("số nhập vào không đúng !");
+            try {
+                if ($key == $number) {
+                    echo "phần tử tại vị trí " . $key . " có giá trụ bằng " . $value;
+                }
+            } catch (Exception $e) {
+                echo " Massage : " . $e->getMessage() , "\n";
+            }
         }
-        }
-    } catch (Exception $e) {
-        echo "Massage : " . $e->getMessage();
     }
+
+
 }
 ?>
 
