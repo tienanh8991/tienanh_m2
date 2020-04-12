@@ -6,10 +6,10 @@ class Point3D extends Point2D
 protected $z;
 protected  $array = [];
 
-public function __construct($x, $y,$z)
+public function __construct()
 {
-    parent::__construct($x, $y);
-    $this->z = $z;
+    parent::__construct();
+
 }
 
     /**
