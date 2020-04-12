@@ -1,7 +1,7 @@
 <?php
 
 
-class MovablePoint extends Point2D
+class MovablePoint extends point
 {
 protected $xSpeed;
 protected $ySpeed;

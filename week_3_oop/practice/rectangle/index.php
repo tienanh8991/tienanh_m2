@@ -4,7 +4,7 @@ include "class.php";
 $width = 10;
 $height = 20;
 
-$rectangle = new Rectangle($width,$height);
+$rectangle = new Rec($width,$height);
 
 echo "Area = " . $rectangle -> getArea() . " ; ";
 echo "Perimeter = " . $rectangle ->getPerimeter() . " ; ";

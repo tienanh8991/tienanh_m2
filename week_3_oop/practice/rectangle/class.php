@@ -1,6 +1,6 @@
 <?php
 
-class Rectangle
+class Rec
 {
     public $width;
     public $height;

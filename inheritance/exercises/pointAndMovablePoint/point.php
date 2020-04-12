@@ -1,7 +1,7 @@
 <?php
 
 
-class Point2D
+class point
 {
 protected $x;
 protected $y;
